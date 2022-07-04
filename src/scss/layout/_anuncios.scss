@@ -13,20 +13,13 @@
 
     h3, p {
         margin: 0;
-    }
-    .precio {
-        color: $verde;
-        font-weight: $bold;
-        font-size: 3rem;
-    }
-    p {
-        font-weight: $black;
-    }
+    }  
 }
 .iconos-caracteristicas {
     display: flex;
     list-style: none;
     padding: 0;
+    max-width: 40rem;
 
     li {
         flex: 1;
@@ -37,4 +30,12 @@
             margin-right: 1rem;
         }
     }
+}
+.precio {
+    color: $verde;
+    font-weight: $bold;
+    font-size: 3rem;
+}
+p {
+    font-weight: $black;
 }
