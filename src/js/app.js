@@ -1,31 +1,29 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+  eventListeners()
 
-    eventListeners();
-
-    darkMode();
-});
+  darkMode()
+})
 
 function darkMode() {
+  const botonDarkMode = document.querySelector('.dark-mode-boton')
 
-    const botonDarkMode = document.querySelector('.dark-mode-boton');
-
-    botonDarkMode.addEventListener('click', function (){
-        document.body.classList.toggle('.dark-mode');
-    })
+  botonDarkMode.addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode')
+  })
 }
 
 function eventListeners() {
-    const mobileMenu = document.querySelector('.mobile-menu');
+  const mobileMenu = document.querySelector('.mobile-menu')
 
-    mobileMenu.addEventListener('click', navegacionResponsive); 
+  mobileMenu.addEventListener('click', navegacionResponsive)
 }
-function navegacionResponsive () {
-    const navegacion = document.querySelector('.navegacion');
+function navegacionResponsive() {
+  const navegacion = document.querySelector('.navegacion')
 
-    /*if (navegacion.classList.contains('mostrar')){
+  /*if (navegacion.classList.contains('mostrar')){
         navegacion.classList.remove('mostrar');
     }else {
         navegacion.classList.add('mostrar');
-    }*/  //esta es más recomendable cuando inicias
-    navegacion.classList.toggle('mostrar'); //esta es más avanzada, se ve mejor
+    }*/ //esta es más recomendable cuando inicias
+  navegacion.classList.toggle('mostrar') //esta es más avanzada, se ve mejor
 }
